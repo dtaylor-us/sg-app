@@ -1,8 +1,53 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="row">
-  <div class="col-sm-12">
-    {{docs|markdown}}
-  </div>
+    <div class="col-sm-12 main">
+        <div class="info">
+            <div class="breadcrumb"><p>Organization Name / Group Name</p></div>
+
+            <section class="group-info">
+                <h1>Group Name</h1>
+                <img class="group-img img-thumbnail" src="#" alt="Group image">
+                <ul class="group-info-list">
+                    <li><p>Summary</p></li>
+                    <li><p>Facilitator</p></li>
+                    <li><p>Contact</p></li>
+                    <li><p>Schedule</p></li>
+                    <li><p>Guidelines</p></li>
+                </ul>
+                <p class="group-info-option">
+                    The Kingdom Jesus came to establish is all about relationships: learning to love as God loves us.
+                    Jesus calls us to be a community of “peacemakers” who relate to each other in ways that are
+                    radically distinct from the norms of human relationships. “Becoming Peacemakers” will teach the
+                    relational principles of the Bible as well as basic relational skills that will help us to live out
+                    and reflect God’s kind of love.
+                </p>
+            </section>
+        </div>
+        <section class="features">
+            <div class="group-features-menu">
+                <ul class="feature-list">
+                    <li>Events</li>
+                    <li>Messages</li>
+                    <li>Media</li>
+                </ul>
+
+                <ul class="feature-options">
+                    <li>List Filter</li>
+                </ul>
+            </div>
+            <div class="feature-content">
+                <div class="feature-menu">
+                    <h2 class="feature-title">Feature Title</h2>
+                    <ul>
+                        <li>View calender</li>
+                        <li>Filter calender</li>
+                        <li>Add event</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
 </div>
 {% endblock %}

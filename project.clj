@@ -14,6 +14,7 @@
                  [org.clojure/clojure "1.8.0"]
                  [org.clojure/tools.cli "0.3.5"]
                  [org.clojure/tools.logging "0.3.1"]
+                 [org.clojure/clojurescript "1.9.229"]
                  [org.webjars.bower/tether "1.3.7"]
                  [org.webjars/bootstrap "4.0.0-alpha.5"]
                  [org.webjars/font-awesome "4.7.0"]
@@ -29,11 +30,21 @@
   :jvm-opts ["-server" "-Dconf=.lein-env"]
   :source-paths ["src/clj"]
   :resource-paths ["resources"]
+  :cljsbuild {
+  :builds [ { :id "example"
+              :source-paths ["src/"]
+              :figwheel true
+              :compiler {  :main "example.core"
+                           :asset-path "js/out"
+                           :output-to "resources/public/js/example.js"
+                           :output-dir "resources/public/js/out" } } ]
+}
   :target-path "target/%s/"
   :main sg-app.core
 
   :plugins [[lein-cprop "1.0.1"]
-            [lein-immutant "2.1.0"]]
+            [lein-immutant "2.1.0"]
+            [lein-figwheel "0.5.8"]]
 
   :profiles
   {:uberjar {:omit-source true
@@ -50,7 +61,7 @@
                                  [ring/ring-devel "1.5.0"]
                                  [pjstadig/humane-test-output "0.8.1"]]
                   :plugins      [[com.jakemccrary/lein-test-refresh "0.18.1"]]
-                  
+
                   :source-paths ["env/dev/clj" "test/clj"]
                   :resource-paths ["env/dev/resources"]
                   :repl-options {:init-ns user}
