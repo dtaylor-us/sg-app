@@ -1,53 +1,46 @@
-{% extends "base.html" %}
-{% block content %}
-<div class="row">
-    <div class="col-sm-12 main">
-        <div class="info">
-            <div class="breadcrumb"><p>Organization Name / Group Name</p></div>
-
-            <section class="group-info">
-                <h1>Group Name</h1>
-                <img class="group-img img-thumbnail" src="#" alt="Group image">
-                <ul class="group-info-list">
-                    <li><p>Summary</p></li>
-                    <li><p>Facilitator</p></li>
-                    <li><p>Contact</p></li>
-                    <li><p>Schedule</p></li>
-                    <li><p>Guidelines</p></li>
-                </ul>
-                <p class="group-info-option">
-                    The Kingdom Jesus came to establish is all about relationships: learning to love as God loves us.
-                    Jesus calls us to be a community of “peacemakers” who relate to each other in ways that are
-                    radically distinct from the norms of human relationships. “Becoming Peacemakers” will teach the
-                    relational principles of the Bible as well as basic relational skills that will help us to live out
-                    and reflect God’s kind of love.
-                </p>
-            </section>
+<!DOCTYPE html>
+<html>
+  <head>
+      <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Welcome to sg-app</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="app">
+      <div class="container-fluid">
+        <div class="card-deck">
+          <div class="card-block">
+            <h4>Welcome to sg-app</h4>
+            <p>If you're seeing this message, that means you haven't yet compiled your ClojureScript!</p>
+            <p>Please run <code>lein figwheel</code> to start the ClojureScript compiler and reload the page.</p>
+            <h4>For better ClojureScript development experience in Chrome follow these steps:</h4>
+            <ul>
+              <li>Open DevTools
+              <li>Go to Settings ("three dots" icon in the upper right corner of DevTools > Menu > Settings F1 > General > Console)
+              <li>Check-in "Enable custom formatters"
+              <li>Close DevTools
+              <li>Open DevTools
+            </ul>
+            <p>See <a href="http://www.luminusweb.net/docs/clojurescript.md">ClojureScript</a> documentation for further details.</p>
+          </div>
         </div>
-        <section class="features">
-            <div class="group-features-menu">
-                <ul class="feature-list">
-                    <li>Events</li>
-                    <li>Messages</li>
-                    <li>Media</li>
-                </ul>
-
-                <ul class="feature-options">
-                    <li>List Filter</li>
-                </ul>
-            </div>
-            <div class="feature-content">
-                <div class="feature-menu">
-                    <h2 class="feature-title">Feature Title</h2>
-                    <ul>
-                        <li>View calender</li>
-                        <li>Filter calender</li>
-                        <li>Add event</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
+      </div>
     </div>
-</div>
-{% endblock %}
+
+    <!-- scripts and styles -->
+    {% style "/assets/bootstrap/css/bootstrap.min.css" %}
+    {% style "/assets/font-awesome/css/font-awesome.min.css" %}
+    {% style "/css/screen.css" %}
+
+    <script type="text/javascript">
+        var context = "{{servlet-context}}";
+        var csrfToken = "{{csrf-token}}";
+    </script>
+    {% script "/js/app.js" %}
+  </body>
+</html>
+
+
+
+

@@ -1,5 +1,6 @@
 (ns user
   (:require [mount.core :as mount]
+            [sg-app.figwheel :refer [start-fw stop-fw cljs]]
             sg-app.core))
 
 (defn start []
