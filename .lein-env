@@ -1,1 +1,1 @@
-{}
+{:database-url "jdbc:h2:./sg_app_dev.db"}

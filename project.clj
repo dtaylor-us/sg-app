@@ -4,6 +4,7 @@
   :url "http://example.com/FIXME"
 
   :dependencies [[bouncer "1.0.0"]
+                 [cljs-ajax "0.5.8"]
                  [com.h2database/h2 "1.4.192"]
                  [compojure "1.5.1"]
                  [conman "0.6.2"]
@@ -22,9 +23,12 @@
                  [org.webjars/bootstrap "4.0.0-alpha.5"]
                  [org.webjars/font-awesome "4.7.0"]
                  [org.webjars/webjars-locator-jboss-vfs "0.1.0"]
+                 [reagent "0.6.0"]
+                 [reagent-utils "0.2.0"]
                  [ring-middleware-format "0.7.0"]
                  [ring-webjars "0.1.1"]
                  [ring/ring-defaults "0.2.1"]
+                 [secretary "1.2.3"]
                  [selmer "1.10.3"]]
 
   :min-lein-version "2.0.0"
@@ -61,7 +65,8 @@
                  :optimizations :advanced
                  :pretty-print false
                  :closure-warnings
-                 {:externs-validation :off :non-standard-jsdoc :off}}}}}
+                 {:externs-validation :off :non-standard-jsdoc :off}
+                 :externs ["react/externs/react.js"]}}}}
              
              
              :aot :all
