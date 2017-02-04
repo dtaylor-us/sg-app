@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>Welcome to Book-EZ</title>
+    <title>Welcome to Small Group Application</title>
     <%--META DATA--%>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">

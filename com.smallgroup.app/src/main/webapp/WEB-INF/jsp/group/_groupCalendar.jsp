@@ -1,6 +1,6 @@
 <!-- Side Bar -->
 <div class="col-sm-2">
-    <div id="sidebar" class="nav list-group spacer-25">
+    <div id="sidebar" class="nav list-group">
 
         <li class=""><h3>Events</h3></li>
         <hr/>
@@ -24,12 +24,11 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2>Event Name</h2>
+                        <h4>Event Name</h4>
                         <a href="#" class="attendingInd"><i class="fa fa-2x fa-calendar-check-o"></i></a>
                         <ul class="list-inline">
                             <li class="text-grey-bdbdbd">Date</li>
                             <li class="text-grey-bdbdbd">Location</li>
-                            <li class="text-grey-bdbdbd">Category</li>
                         </ul>
                         <p class="padding-right-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et
@@ -49,12 +48,11 @@
             <div class="panel-body">
                 <div class="row">
                     <div class="col-sm-12">
-                        <h2>Event Name</h2>
+                        <h4>Event Name</h4>
                         <a href="#" class="attendingInd"><i class="fa fa-2x fa-calendar-o"></i></a>
                         <ul class="list-inline">
                             <li class="text-grey-bdbdbd">Date</li>
                             <li class="text-grey-bdbdbd">Location</li>
-                            <li class="text-grey-bdbdbd">Category</li>
                         </ul>
                         <p class="padding-right-25">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                             labore et

@@ -1,8 +1,8 @@
 <!-- Side Bar -->
 <div class="col-sm-2">
-    <div id="sidebar" class="nav list-group spacer-25">
+    <div id="sidebar" class="nav list-group">
 
-        <li class=""><h3>Mailbox</h3></li>
+        <h3>Mailbox</h3>
         <hr/>
         <li>
             <a class="" href="#"><span>View Events</span></a>
