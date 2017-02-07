@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: repositories.EventRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.926 sec <<< FAILURE! - in repositories.EventRepositoryTest
+saveEvent(repositories.EventRepositoryTest)  Time elapsed: 0.149 sec  <<< ERROR!
+org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:165)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:286)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:185)
+	at com.smallgroup.app.domain.Event_$$_jvst7fb_4.getId(Event_$$_jvst7fb_4.java)
+	at repositories.EventRepositoryTest.saveEvent(EventRepositoryTest.java:46)
+

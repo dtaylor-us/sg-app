@@ -26,7 +26,7 @@ public class Event {
     private ZonedDateTime startDate;
     private ZonedDateTime endDate;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     private Calendar calendar;
 
     public Long getId() {
@@ -202,4 +202,6 @@ public class Event {
                 ", endDate='" + endDate + "'" +
                 '}';
     }
+
+
 }

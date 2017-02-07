@@ -5,7 +5,6 @@ import java.time.ZonedDateTime;
 import java.util.Objects;
 
 @Entity
-
 public class GroupAccount {
 
     @Version

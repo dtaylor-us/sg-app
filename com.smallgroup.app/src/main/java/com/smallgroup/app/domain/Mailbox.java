@@ -19,8 +19,8 @@ public class Mailbox {
 
     private String mailboxName;
 
-    @OneToMany(mappedBy = "mailbox")
-    private Set<Message> mailboxCalendars = new HashSet<>();
+    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
+    private Set<Message> mailboxMessages = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -44,28 +44,28 @@ public class Mailbox {
     }
 
     public Set<Message> getMailboxCalendars() {
-        return mailboxCalendars;
+        return mailboxMessages;
     }
 
-    public Mailbox mailboxCalendars(Set<Message> messages) {
-        this.mailboxCalendars = messages;
+    public Mailbox mailboxMessages(Set<Message> messages) {
+        this.mailboxMessages = messages;
         return this;
     }
 
     public Mailbox addMailboxCalendar(Message message) {
-        mailboxCalendars.add(message);
+        mailboxMessages.add(message);
         message.setMailbox(this);
         return this;
     }
 
     public Mailbox removeMailboxCalendar(Message message) {
-        mailboxCalendars.remove(message);
+        mailboxMessages.remove(message);
         message.setMailbox(null);
         return this;
     }
 
     public void setMailboxCalendars(Set<Message> messages) {
-        this.mailboxCalendars = messages;
+        this.mailboxMessages = messages;
     }
 
     @Override

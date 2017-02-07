@@ -19,7 +19,7 @@ public class Message {
     private String createDate;
     private String content;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     private Mailbox mailbox;
 
     public Long getId() {

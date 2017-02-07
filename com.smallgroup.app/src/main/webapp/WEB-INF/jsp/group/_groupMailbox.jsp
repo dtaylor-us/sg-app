@@ -20,9 +20,9 @@
 <%--Main Content--%>
 <div class="col-sm-10">
     <div class="table-responsive">
-        <table class="table">
+        <table class="table table-hover">
             <thead>
-            <tr>
+            <tr class="">
                 <th>Author</th>
                 <th>Subject</th>
                 <th>Date</th>

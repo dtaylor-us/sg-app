@@ -19,7 +19,7 @@ public class Calendar {
 
     private String calendarName;
 
-    @OneToMany(mappedBy = "calendar")
+    @OneToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     private Set<Event> calendarEvents = new HashSet<>();
 
     public Long getId() {

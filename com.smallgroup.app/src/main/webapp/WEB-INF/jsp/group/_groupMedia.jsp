@@ -7,7 +7,7 @@
 <%--Main Content--%>
 <div class="col-sm-10">
     <div class="table-responsive">
-        <table class="table">
+        <table class="table table-hover">
             <thead>
             <tr>
                 <th>File Name</th>
@@ -21,19 +21,19 @@
                 <td>BP - Class 1 Notes.docx</td>
                 <td>11/21/16</td>
                 <td>11/21/16</td>
-                <td><i class="fa fa-2x fa-download"></i></td>
+                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-2x fa-download"></i></td>
             </tr>
             <tr>
                 <td>BP - Class 1 Notes.docx</td>
                 <td>11/21/16</td>
                 <td>11/21/16</td>
-                <td><i class="fa fa-2x fa-download"></i></td>
+                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-2x fa-download"></i></td>
             </tr>
             <tr>
                 <td>BP - Class 1 Notes.docx</td>
                 <td>11/21/16</td>
                 <td>11/21/16</td>
-                <td><i class="fa fa-2x fa-download"></i></td>
+                <td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-2x fa-download"></i></td>
             </tr>
             </tbody>
         </table>

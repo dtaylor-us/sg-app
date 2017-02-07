@@ -18,8 +18,8 @@ public class Media {
 
     private String mediaName;
 
-    @OneToMany(mappedBy = "media")
-    private Set<MediaFeature> mailboxCalendars = new HashSet<>();
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Set<MediaFeature> mediaGroupMediaFeatures = new HashSet<>();
 
     public Long getId() {
         return id;
@@ -43,28 +43,28 @@ public class Media {
     }
 
     public Set<MediaFeature> getMailboxCalendars() {
-        return mailboxCalendars;
+        return mediaGroupMediaFeatures;
     }
 
-    public Media mailboxCalendars(Set<MediaFeature> mediaFeatures) {
-        this.mailboxCalendars = mediaFeatures;
+    public Media mediaGroupMediaFeatures(Set<MediaFeature> mediaFeatures) {
+        this.mediaGroupMediaFeatures = mediaFeatures;
         return this;
     }
 
     public Media addMailboxCalendar(MediaFeature mediaFeature) {
-        mailboxCalendars.add(mediaFeature);
+        mediaGroupMediaFeatures.add(mediaFeature);
         mediaFeature.setMedia(this);
         return this;
     }
 
     public Media removeMailboxCalendar(MediaFeature mediaFeature) {
-        mailboxCalendars.remove(mediaFeature);
+        mediaGroupMediaFeatures.remove(mediaFeature);
         mediaFeature.setMedia(null);
         return this;
     }
 
     public void setMailboxCalendars(Set<MediaFeature> mediaFeatures) {
-        this.mailboxCalendars = mediaFeatures;
+        this.mediaGroupMediaFeatures = mediaFeatures;
     }
 
     @Override

@@ -128,15 +128,6 @@ body{
 }
 
 /*BOOTSTRAP OVERRIDE*/
-.panel-body {
-    padding: 10px 30px;
-}
-
-.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
-    padding: 20px;
-
-}
-
 .navbar-brand {
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -145,11 +136,11 @@ body{
     height: 320px;
 }
 
-/*CUSTOM STYLES*/
-.bookTitle {
-    min-height: 40px;
+.menu-link a.hover {
+    text-decoration: none;
 }
 
+/*CUSTOM STYLES*/
 .ft-thumb {
     height: 345px;
 }
@@ -175,6 +166,7 @@ body{
     font-size: 1.2em;
     font-weight: 600;
 }
+
 
 /*LOGICAL STYLES*/
 .attendingInd {

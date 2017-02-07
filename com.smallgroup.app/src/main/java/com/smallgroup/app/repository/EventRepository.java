@@ -11,5 +11,10 @@ import java.util.List;
  */
 @SuppressWarnings("unused")
 public interface EventRepository extends JpaRepository<Event,Long> {
+    Event findByEventName(String eventName);
+    List<Event> findAllByEventName(String eventName);
+
+//    Find by start event
+//    Find all by start event
 
 }

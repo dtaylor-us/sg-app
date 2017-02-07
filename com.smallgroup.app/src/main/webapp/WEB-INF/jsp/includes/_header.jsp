@@ -39,14 +39,15 @@
     <c:url value="/webjars/font-awesome/4.7.0/css/font-awesome.css" var="fontawesomeCSS"/>
     <link rel="stylesheet" href="${fontawesomeCSS}" media="screen"/>
 
+    <c:url value="/static/css/sb-admin-2.css" var="sbAdminCSS"/>
+    <link rel="stylesheet" href="${sbAdminCSS}" media="screen"/>
+
     <%--custom CSS--%>
     <c:url value="/static/css/custom-styles.css" var="customCSS"/>
     <link rel="stylesheet" href="${customCSS}" media="screen"/>
 
-    <c:url value="/static/css/sb-admin-2.css" var="sbAdminCSS"/>
-    <link rel="stylesheet" href="${sbAdminCSS}" media="screen"/>
 
-    <%--google fonts--%>
+<%--google fonts--%>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto+Condensed' rel='stylesheet'
           type='text/css'>
 </head>

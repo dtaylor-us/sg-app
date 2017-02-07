@@ -4,17 +4,9 @@
 
         <li class=""><h3>Events</h3></li>
         <hr/>
-        <li>
-            <a class="" href="#"><span>View Events</span></a>
-        </li>
-
-        <li>
-            <a class="" href="#"><span>My Events</span></a>
-        </li>
-
-        <li>
-            <a class="" href="#"><span>Add Event</span></a>
-        </li>
+        <li><a class="" href="#"><span>View Events</span></a></li>
+        <li><a class="" href="#"><span>My Events</span></a></li>
+        <li><a class="" href="#"><span>Add Event</span></a></li>
     </div>
 </div>
 <%--Main Content--%>

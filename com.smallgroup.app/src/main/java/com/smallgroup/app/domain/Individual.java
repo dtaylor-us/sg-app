@@ -1,17 +1,13 @@
 package com.smallgroup.app.domain;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Version;
+import javax.persistence.*;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-
+@Entity
 public class Individual {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "IndividualId")
-    private Integer id;
+    private Long id;
 
     @Version
     private Integer version;
@@ -43,11 +39,11 @@ public class Individual {
     }
 
     // region GET & SET
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
